@@ -1,21 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Mota|Portifólio</title>
 </head>
 <body>
     
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="" alt="">
-                </a>
-            </div>
-        </div><!--interface-->
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="#" ><img class="logo" src="./img/mota_logo.png" alt=""></a>
+
+                <nav>
+                    <ul>
+                        <li> <a href="">SOBRE</a></li>
+                        <li><a href="">COMPETÊNCIAS</a></li>
+                        <li> <a href="">PROJETOS</a></li>
+                        <li> <a href="">REDES SOCIAIS</a></li> <!--DROPDOWN-->
+                        
+                    </ul>
+                </nav>
+
+                <div class="btncontato">
+
+                    <a href="">
+                        <button>
+                            CONTATO
+                        </button>
+                    </a>
+
+                </div>
+
+            </div> <!--flex-->
+
+        </div>
     </header>
+
+    <main>
+        <section class="banner">
+            <h1>System.out.println<span>("Hello word");</span></h1>
+        </section>
+    
+    
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="./img/Inserir um título (3) (1).png" alt="">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>Hello World, <span>Sou João Pedro Mota.</span></h2>
+                        <p>Óla ! Sou João Pedro Mota do Nascimento, tenho 16 anos. Atualmente estou no Ensino Médio e Profissional no curso de Informática e almejo ser porgramador Front-End.</p>
+                        <p>Estou no último ano do Ensino Médio e Técnico, onde pude ter contato com varios tipo de hardware, softwares e linguagens de programação e consulta como: HTML, CSS, Vue.js, Java, Javascript, Spring, Python, Php e SQL.</p>
+                    </div> <!--txt-sobre-->
+
+                </div><!--flex-->
+            </div><!--sobre-->
+
+        
+
+        </section>
+    </main>
+
+
+    <script src="./menu.js"></script>
+
 </body>
 </html>
