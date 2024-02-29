@@ -125,17 +125,22 @@ header ul li a{
 
 .banner h1{
     font-size: 3.5em;
-    color: #fff;
+    color: #fff; 
     position: relative; 
     z-index: 1; 
+    text-shadow: 0 0 2px white;
+    
 }
 
 .banner h1 span{
     background-image: linear-gradient(#FF5E48, #9E45A1);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
+     text-shadow: 0 0 45px #FF5E48;
 }
+
+
 
 .img-sobre{
     display: flex;
@@ -208,12 +213,14 @@ section.sobre .flex{
 
  .txt-sobre span{
     display: block;
-    background-image: linear-gradient(#FF5E48, #5005F2);
+    background-image: linear-gradient(#FF5E48, #9E45A1);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #FF5E48;
-     text-shadow: 0 0 5px #FF5E48;
+     text-shadow: 0 0 50px #FF5E48;
+     
+     
+     
     
 }
 
