@@ -47,6 +47,21 @@ html{
     transform: scale(1.10);
 }
 
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    box-shadow: 0px 0ppx 20px white;
+}
+
+h2.titulo span{
+    background-image: linear-gradient(#FF5E48, #9E45A1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     text-shadow: 0 0 45px #FF5E48;
+}
+
 header{
     width: 100%;
     padding: 60px 4%;
@@ -225,10 +240,13 @@ section.sobre .flex{
 }
 
 .txt-sobre p{
+    padding: 1.2rem;
     font-size: 25px;
     margin: 10px 0;
     text-align: justify;
      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+     background-color: rgba(0, 0, 0, 0.377);
+     border-radius: 10px;
 }
 
 .btn-sobre{
@@ -262,4 +280,58 @@ section.sobre .flex{
     margin: 0 7px;
     box-shadow: 0px 0px 10px #FE775A;
     transition: .3s;
+    
 }
+
+section.competencias{
+    align-items: center;
+    gap: 60px;
+    
+}
+
+.competencias{
+    position: relative;
+    display: absolute;
+    z-index: 5;
+    height: 100vh;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Para garantir que a sombra não seja cortada */
+
+    /* Adicionando um pseudo-elemento ::before para o overlay escuro */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+        z-index: -1; /* Coloca o overlay atrás da imagem */
+    }
+
+    /* Estilo da imagem de fundo */
+    background-image: url(./img/wallpaper-competencias.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.competencias .competencias-box{
+    color: #fff;
+    padding: 40px;
+    display: block;
+    
+}
+
+.competencias .competencias-box i{
+    font-size: 58px;
+    
+}
+
+
+
+
+
+
+
+
+
