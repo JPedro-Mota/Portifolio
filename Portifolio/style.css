@@ -17,7 +17,7 @@ a:hover{
 }
 
 html{
-    height: 500vh;
+    height: auto;
 } 
 
 
@@ -51,7 +51,8 @@ h2.titulo{
     color: #fff;
     font-size: 38px;
     text-align: center;
-    box-shadow: 0px 0ppx 20px white;
+    text-shadow: 0px 0px 10px white;
+    margin-top: 2%;
 }
 
 h2.titulo span{
@@ -167,8 +168,10 @@ header ul li a{
     padding-bottom: auto;
     max-width: 400px;
     margin-left: 10%;
+    margin-bottom: 10px;
     /* margin-top: 20%; */
-    border-radius: 7%;
+    border-radius: 5%;
+
 }
 .sobre {
     position: relative;
@@ -195,10 +198,11 @@ header ul li a{
     background-size: cover;
     background-position: center center;
 }
-section .sobre {
-    padding: 40px 4%;
-    box-shadow: 0px 10px 20px rgba(255, 252, 252, 0.1);
+section.sobre {
+    padding: 60px 4%;
+    box-shadow: 0px 0 80px 30px #000000;
      transition: box-shadow 0.3s ease;
+     
     
 }
 
@@ -284,8 +288,11 @@ section.sobre .flex{
 }
 
 section.competencias{
+    padding: 60px 4%;
     align-items: center;
     gap: 60px;
+    z-index: 5;
+    box-shadow: 0px 0px 80px 30px #57057da2;
     
 }
 
@@ -294,7 +301,6 @@ section.competencias{
     display: absolute;
     z-index: 5;
     height: 100vh;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden; /* Para garantir que a sombra não seja cortada */
 
     /* Adicionando um pseudo-elemento ::before para o overlay escuro */
@@ -310,28 +316,145 @@ section.competencias{
     }
 
     /* Estilo da imagem de fundo */
-    background-image: url(./img/wallpaper-competencias.png);
+    background-image: url(./img/wallpaper-competencias3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.competencias-container{
+    margin-top: 5%;
+}
+
+.btn-competencias{
+    display: flex;
+    justify-content: center;
+    z-index: 500;
+    padding: 20px;
+    
+}
+
+
+     .competencias-icons .btn-competencias button{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 7px;
+    box-shadow: 0px 0px 10px #FE775A;
+    transition: .3s;
+}
+
+.competencias-icons .btn-competencias button p {
+    max-width: 100px;
+    max-height: 100px;
+    font-size: 13px;
+}
+
+.competencias button:hover{
+    box-shadow: 0px 0px 20px #24137a;
+    background-image: linear-gradient(#FF5E48,#9E45A1 );
+    transform: scale(1.22);
+}
+
+section.projeto{
+    padding: 60px 4%;
+    box-shadow: 0px 0 25px 30px #011732;
+    
+}
+
+
+
+.projeto{
+    position: relative;
+    display: absolute;
+    z-index: 5;
+    height: 100vh;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Para garantir que a sombra não seja cortada */
+
+    /* Adicionando um pseudo-elemento ::before para o overlay escuro */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); /* Ajuste a opacidade conforme necessário */
+        z-index: -1; /* Coloca o overlay atrás da imagem */
+    }
+
+    /* Estilo da imagem de fundo */
+    background-image: url(img/4bdb8a9e-cf4b-4a6e-ac6f-483eb56ac57f.jpeg);
     background-size: cover;
     background-position: center center;
 }
 
-.competencias .competencias-box{
+section.projeto .flex{
+    justify-content: space-around;
+
+}
+
+.img-port{
+    background-image: url(./img/image.png);
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 0% 100%;
+    transition: 5s ease;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 5rem;
+    
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+    
+    
+}
+
+.overlay-pro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000062;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
     color: #fff;
-    padding: 40px;
-    display: block;
-    
+    text-shadow:  0 0 20px #fff;
+    opacity: 0;
+    transition: 1s ease;
 }
 
-.competencias .competencias-box i{
-    font-size: 58px;
-    
+.overlay-pro:hover{
+    opacity: 1;
 }
 
+.img-port-f{
+    background-image: url(./img/image.png);
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s ease;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 5rem;
+}
 
-
-
-
-
-
-
+.img-port-f:hover{
+    background-position: 100% 100%;
+}
 
