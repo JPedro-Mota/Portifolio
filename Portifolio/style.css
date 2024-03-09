@@ -16,9 +16,7 @@ a:hover{
     color: purple;
 }
 
-html{
-    height: auto;
-} 
+
 
 
 /* tamanho lateral que vai dar o efeito de rolagem */
@@ -30,6 +28,12 @@ html{
 }
 
 .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,7 +79,7 @@ header{
 
 header.rolagem{
     background-color: rgb(26, 24, 24);
-    padding: 20px 4%;
+    padding: 15px 4%;
 }
 
 header.rolagem a, header.rolagem i{
@@ -115,6 +119,7 @@ header ul li a{
 
 
 .banner{
+    width: 100%;
     height: 100vh;
     background-image: url(./img/lake-mountains-rocks-twilight-sunset-purple-sky-pink-sky-2560x1080-3775.jpg);
     background-position: center;
@@ -371,7 +376,7 @@ section.projeto{
     position: relative;
     display: absolute;
     z-index: 5;
-    height: 100vh;
+    height: 100%;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden; /* Para garantir que a sombra não seja cortada */
 
@@ -400,8 +405,8 @@ section.projeto .flex{
 
 .img-port{
     background-image: url(./img/image.png);
-    width: 360px;
-    height: 460px;
+    width: 350px;
+    height: 500px;
     background-size: cover;
     background-position: 0% 100%;
     transition: 5s ease;
@@ -412,10 +417,25 @@ section.projeto .flex{
     
 }
 
+.img-port-f{
+    background-image: url(./img/image.png);
+    width: 350px;
+    height: 500px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s ease;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 5rem;
+}
 .img-port:hover{
     background-position: 100% 100%;
     
-    
+}
+
+.img-port-f:hover{
+    background-position: 100% 100%;
 }
 
 .overlay-pro{
@@ -441,20 +461,39 @@ section.projeto .flex{
     opacity: 1;
 }
 
-.img-port-f{
-    background-image: url(./img/image.png);
-    width: 360px;
-    height: 460px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 5s ease;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
-    margin-top: 5rem;
-}
 
-.img-port-f:hover{
-    background-position: 100% 100%;
+
+@media screen and (max-width: 1285px){
+    
+
+    header.rolagem{
+        background-color: #00000000;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .banner-h1{
+        
+    }
+
+    /* Nav-bar */
+    .menu-desktop, .btncontato{
+        display: none;
+    }
+
+    .sobre {
+        height: 50%;
+    }
+    .projeto{
+        height: 50%;
+    }
+
+    .img-port, .img-port-f{
+        width: 400px;
+        height: 460px;
+    }
+
 }
 
