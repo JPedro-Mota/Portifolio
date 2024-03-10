@@ -166,11 +166,12 @@ header nav ul li a{
     z-index: 99999;
     width: 0%;
     overflow: hidden;
-
+    transition: 1s ease;
 }
 
 .menu-mobile.abrir-menu{
     width: 60%;
+    
 }
 
 .menu-mobile.abrir-menu ~ .overlay-menu{
@@ -546,6 +547,7 @@ section.projeto .flex{
 
     .btn-abrir{
         display: flex;
+        
     }
 
     .flex{
