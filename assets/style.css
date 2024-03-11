@@ -170,6 +170,7 @@ header nav ul li a{
 
 .menu-mobile.abrir-menu{
     width: 60%;
+    transition: 1s ease;
     
 }
 
