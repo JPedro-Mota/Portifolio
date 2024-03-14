@@ -4,6 +4,11 @@ window.addEventListener("scroll", function(){
     header.classList.toggle('rolagem', window.scrollY > 250)
 })
 
+window.addEventListener("scroll", function(){
+    let scroll = document.querySelector('.scrollTop')
+    scroll.classList.toggle('voltar', window.scrollY > 250)
+})
+
 let btnMenu = document.getElementById('btn-menu')
 let menu = document.getElementById('mobile-menu')
 let overlay = document.getElementById('overlay-menu')
